@@ -1,0 +1,25 @@
+//how to install and run sass with commandline
+
+1. install sass globall 
+ $ npm install -g sass
+ now you get access in sass command in your teminal 
+
+2. now you run comomand where your scss file exit
+ $ sass sass/demo.scss css/styles.css
+ 
+#we can use package.json file for easy run sass . For that run
+ $ npm init -y
+get a package.json file and here change code: 
+"scripts": {
+    "start": "sass sass/demo.scss css/styles.css"
+  },
+now insted of ($ sass sass/demo.scss css/styles.css) this code we can just write
+ $ npm start 
+#In sass command (sass/demo.scss) is scss folder and (css/styles) will be created after run the command in terminal, 
+when need run sass you have to run this command in your teminal.
+ 
+ $ sass sass/demo.scss css/styles.css 
+ or
+ $ npm start
+
+after that sass will be run. That means scss code compile into css code. 
